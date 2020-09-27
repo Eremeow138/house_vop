@@ -1,0 +1,72 @@
+extends layout/layout.pug
+
+block content
+    // begin home
+    section#home.home.section
+        .home__content
+            h1.home__title 
+                |Жилой комплекс
+                br
+                |в историческом центре
+            .home__downIcon
+                i.icon_mouse
+        .home__bottom
+            a.home__item
+                span.home__icon
+                    i.icon_placeholder
+                span.home__text Наб. реки Фонтанки 10-15
+            a.home__item
+                span.home__icon
+                    i.icon_phone-call
+                span.home__text 8 (812) 123-45-67
+
+    // end home
+    // begin advantages
+    section#advantages.advantages.section
+        //- .advantages__II II
+        .container_center
+
+            .advantages__content
+                .advantages__II II
+                .advantages__item
+                    .advantages__icon
+                        i.icon_square 
+                    .advantages__text Рядом исторические парки и скверы
+                .advantages__item
+                    .advantages__icon
+                        i.icon_building 
+                    .advantages__text Полностью обустроенный
+                .advantages__item
+                    .advantages__icon
+                        i.icon_fountain
+                    .advantages__text 10 фонтанов на территории
+                .advantages__item
+                    .advantages__icon
+                        i.icon_bicycle
+                    .advantages__text
+                        | 6 км
+                        br
+                        | велодорожек
+
+
+    // end advantages
+    // begin apartments
+    section#apartments.apartments.section
+        .container_center
+            h2.section__title Наши квартиры
+            .apartments__content
+                .apartments__III III
+                .apartments__item
+                    a.apartments__plate(href="vk.com" style="background-image: url(img/loft.jpg)")
+                        .apartments__description Лофт — 3 этажа
+                .apartments__item
+                    a.apartments__plate(href="vk.com" style="background-image: url(img/loft2.jpg)")
+                        .apartments__description Лофт — 2 этажа
+                .apartments__item
+                    a.apartments__plate(href="vk.com" style="background-image: url(img/loft.jpg)")
+                        .apartments__description Лофт — 3 этажа
+                .apartments__item
+                    a.apartments__plate(href="vk.com" style="background-image: url(img/loft2.jpg)")
+                        .apartments__description Лофт — 2 этажа
+
+    // end apartments

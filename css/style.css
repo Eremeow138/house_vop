@@ -1,0 +1,1065 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
+.main__content:after, .footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Bold.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Roboto/Roboto-Black.eot?") format("eot"), url("../fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Black.woff") format("woff"), url("../fonts/Roboto/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Black.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Roboto/Roboto-Light.eot?") format("eot"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Light.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Roboto/Roboto-Thin.eot?") format("eot"), url("../fonts/Roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Thin.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Medium.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto/Roboto-Regular.svg#Roboto") format("svg");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.eot?") format("eot"), url("../fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf") format("truetype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.svg#Playfair_Display") format("svg");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Medium.eot?") format("eot"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff2") format("woff2"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Medium.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Medium.ttf") format("truetype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Medium.svg#Playfair_Display") format("svg");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot?") format("eot"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Regular.svg#Playfair_Display") format("svg");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Black.eot?") format("eot"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Black.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf") format("truetype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Black.svg#Playfair_Display") format("svg");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.eot?") format("eot"), url("../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf") format("truetype"), url("../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.svg#Playfair_Display") format("svg");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Light.eot?") format("eot"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Light.woff2") format("woff2"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Light.woff") format("woff"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Light.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Light.svg#Post_No_Bills_Jaffna") format("svg");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Regular.eot?") format("eot"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Regular.woff2") format("woff2"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Regular.woff") format("woff"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Regular.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Regular.svg#Post_No_Bills_Jaffna") format("svg");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold.eot?") format("eot"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold.woff2") format("woff2"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold.woff") format("woff"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold.svg#Post_No_Bills_Jaffna") format("svg");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.eot?") format("eot"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.woff2") format("woff2"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.woff") format("woff"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.svg#Post_No_Bills_Jaffna") format("svg");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Medium.eot?") format("eot"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Medium.woff2") format("woff2"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Medium.woff") format("woff"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Medium.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Medium.svg#Post_No_Bills_Jaffna") format("svg");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.eot?") format("eot"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.woff2") format("woff2"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.woff") format("woff"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.ttf") format("truetype"), url("../fonts/PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.svg#Post_No_Bills_Jaffna") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Raleway/Raleway-Black.eot?") format("eot"), url("../fonts/Raleway/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Black.woff") format("woff"), url("../fonts/Raleway/Raleway-Black.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Black.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway/Raleway-Light.eot?") format("eot"), url("../fonts/Raleway/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Light.woff") format("woff"), url("../fonts/Raleway/Raleway-Light.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Light.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Raleway/Raleway-Medium.eot?") format("eot"), url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Medium.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Raleway/Raleway-ExtraLight.eot?") format("eot"), url("../fonts/Raleway/Raleway-ExtraLight.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraLight.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraLight.ttf") format("truetype"), url("../fonts/Raleway/Raleway-ExtraLight.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Raleway/Raleway-ExtraBold.eot?") format("eot"), url("../fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway/Raleway-ExtraBold.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Raleway/Raleway-Bold.eot?") format("eot"), url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Bold.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Raleway/Raleway-Thin.eot?") format("eot"), url("../fonts/Raleway/Raleway-Thin.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Thin.woff") format("woff"), url("../fonts/Raleway/Raleway-Thin.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Thin.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Raleway/Raleway-Regular.eot?") format("eot"), url("../fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway/Raleway-Regular.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot?") format("eot"), url("../fonts/Raleway/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"), url("../fonts/Raleway/Raleway-SemiBold.svg#Raleway") format("svg");
+}
+/* Global variables */
+/* ======================================================================== */
+.txt_primary {
+  color: #7b8287;
+}
+.txt_success {
+  color: #36a566;
+}
+.txt_info {
+  color: #03a9f4;
+}
+.txt_warning {
+  color: #fca33e;
+}
+.txt_danger {
+  color: #ff1a1a;
+}
+
+/* Grid */
+/* ======================================================================== */
+/* Form */
+/* ======================================================================== */
+/* Breakpoints */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper,
+body,
+html {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  box-sizing: content-box;
+}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: "Raleway";
+  color: #fff;
+  line-height: 1.2;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  text-decoration: none;
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  color: inherit;
+}
+a:focus {
+  outline: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+  outline: 0;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button, html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+.wrapper {
+  font-size: 16px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px auto;
+}
+
+.container_center {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Middle
+ ----------------------------------------------------------------------------- */
+.main__content {
+  padding-bottom: 100px;
+}
+
+.soc {
+  float: left;
+}
+.soc a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3ss;
+}
+.soc a:hover {
+  opacity: 0.8;
+}
+.soc a:before {
+  content: "soc";
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Набросок стилей для шапки
+ ----------------------------------------------------------------------------- */
+.header {
+  background-color: transparent;
+  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.header__content {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  flex-direction: column;
+}
+.header__name {
+  font-family: Post No Bills Jaffna;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+.header__subname {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Набросок стилей для навигации
+-------------------------------------------------------------------------------*/
+.navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.navbar__item {
+  margin: 0 0 0 15px;
+}
+.navbar__item:last-child {
+  margin: 0 -10px 0 28px;
+}
+.navbar__link {
+  padding: 10px;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: 0.5s;
+}
+.navbar__link:hover {
+  color: #242B33;
+}
+.navbar__link:hover span {
+  transform-origin: bottom;
+  transform: scaleY(1);
+}
+.navbar__link span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #D4C17F;
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+.navbar__link span:nth-child(1) {
+  left: 0;
+  transition-delay: 0s;
+}
+.navbar__link span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.15s;
+}
+.navbar__link span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.3s;
+}
+.navbar__link span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.45s;
+}
+/* Набросок стилей для подвала
+ ----------------------------------------------------------------------------- */
+.footer {
+  position: relative;
+  height: 100px;
+  background: #BFF08E;
+}
+.footer .container_center {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon-v1.0/fonts/icomoon.eot?13d18y");
+  src: url("../fonts/icomoon-v1.0/fonts/icomoon.eot?13d18y#iefix") format("embedded-opentype"), url("../fonts/icomoon-v1.0/fonts/icomoon.ttf?13d18y") format("truetype"), url("../fonts/icomoon-v1.0/fonts/icomoon.woff?13d18y") format("woff"), url("../fonts/icomoon-v1.0/fonts/icomoon.svg?13d18y#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon_],
+[class*=" icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_bicycle:before {
+  content: "";
+}
+
+.icon_building:before {
+  content: "";
+}
+
+.icon_facebook_social:before {
+  content: "";
+}
+
+.icon_fountain:before {
+  content: "";
+}
+
+.icon_instagram_social:before {
+  content: "";
+}
+
+.icon_mouse:before {
+  content: "";
+}
+
+.icon_phone-call:before {
+  content: "";
+}
+
+.icon_placeholder:before {
+  content: "";
+}
+
+.icon_play:before {
+  content: "";
+}
+
+.icon_square:before {
+  content: "";
+}
+
+.icon_vk_social:before {
+  content: "";
+}
+
+.icon_youtube_social:before {
+  content: "";
+}
+
+body {
+  background-color: #242B33;
+}
+
+.container_center {
+  position: relative;
+}
+
+.home {
+  position: relative;
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home__content {
+  margin-top: 54px;
+  max-width: 582px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #D4C17F;
+}
+.home__downIcon {
+  color: #D4C17F;
+  font-size: 40px;
+  margin-top: 82px;
+}
+.home__bottom {
+  position: absolute;
+  bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+}
+.home__item {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  cursor: pointer;
+}
+.home__item:last-child {
+  margin-left: 16px;
+}
+.home__icon {
+  font-size: 21px;
+  margin-right: 15px;
+}
+.home__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.advantages {
+  position: relative;
+  background-color: #242B33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.advantages__content {
+  position: relative;
+  margin: 150px 0 62px;
+  max-width: 893px;
+  display: flex;
+}
+.advantages__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.advantages__icon {
+  font-size: 80px;
+  color: #D4C17F;
+}
+.advantages__text {
+  margin-top: 38px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  /* or 135% */
+  text-align: center;
+}
+.advantages__II {
+  position: absolute;
+  right: -30%;
+  top: -79%;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 400px;
+  opacity: 0.02;
+  text-align: center;
+}
+
+.apartments {
+  padding: 20px 0;
+}
+.apartments__content {
+  position: relative;
+  margin: 93px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.apartments__item {
+  cursor: pointer;
+  width: calc(50% - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 36px;
+}
+.apartments__plate {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 58%;
+  width: 100%;
+}
+.apartments__plate:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background-image: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.apartments__plate:hover::after {
+  content: "";
+  height: 200%;
+}
+.apartments__description {
+  position: absolute;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 24px;
+  left: 48px;
+  bottom: 35px;
+  z-index: 2;
+}
+.apartments__III {
+  position: absolute;
+  left: -19%;
+  top: -25%;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 400px;
+  opacity: 0.02;
+  text-align: center;
+}
+
+.section__title {
+  margin: 10px 0;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 36px;
+  color: #D4C17F;
+}

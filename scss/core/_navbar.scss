@@ -1,0 +1,78 @@
+/* Набросок стилей для навигации
+-------------------------------------------------------------------------------*/
+.navbar {
+	margin: 0;
+	padding: 0;
+	// overflow: hidden;
+	// text-align: right;
+	display: flex;
+	list-style: none;
+
+	&__item {
+		// display: inline-block;
+		margin: 0 0 0 15px;
+
+		&:last-child {
+			margin: 0 -10px 0 28px;
+		}
+
+	}
+
+	&__link {
+		padding: 10px;
+		font-family: Raleway;
+
+		font-weight: normal;
+		font-size: 14px;
+
+		letter-spacing: 0.05em;
+
+		position: relative;
+		transition: 0.5s;
+
+		&:hover {
+			color: #242B33;
+		}
+
+		&:hover span {
+			transform-origin: bottom;
+			transform: scaleY(1);
+		}
+
+	}
+
+	&__link span {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 25%;
+		height: 100%;
+		background-color: #D4C17F;
+		z-index: -1;
+		transform-origin: bottom;
+		transform: scaleY(0);
+		transition: transform 0.5s;
+
+		&:nth-child(1) {
+			left: 0;
+			transition-delay: 0s;
+		}
+
+		&:nth-child(2) {
+			left: 25%;
+			transition-delay: 0.15s;
+		}
+
+		&:nth-child(3) {
+			left: 50%;
+			transition-delay: 0.3s;
+		}
+
+		&:nth-child(4) {
+			left: 75%;
+			transition-delay: 0.45s;
+		}
+	}
+
+	&__line {}
+}

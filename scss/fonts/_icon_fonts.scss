@@ -1,0 +1,112 @@
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../fonts/icomoon-v1.0/fonts" !default;
+
+$icon_bicycle: "\e900";
+$icon_building: "\e901";
+$icon_facebook_social: "\e902";
+$icon_fountain: "\e903";
+$icon_instagram_social: "\e904";
+$icon_mouse: "\e905";
+$icon_phone-call: "\e906";
+$icon_placeholder: "\e907";
+$icon_play: "\e908";
+$icon_square: "\e909";
+$icon_vk_social: "\e90a";
+$icon_youtube_social: "\e90b";
+
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?13d18y");
+    src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?13d18y#iefix") format('embedded-opentype'), url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?13d18y") format('truetype'), url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?13d18y") format('woff'), url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?13d18y##{$icomoon-font-family}") format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon_"],
+[class*=" icon_"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_bicycle {
+    &:before {
+        content: $icon_bicycle;
+    }
+}
+
+.icon_building {
+    &:before {
+        content: $icon_building;
+    }
+}
+
+.icon_facebook_social {
+    &:before {
+        content: $icon_facebook_social;
+    }
+}
+
+.icon_fountain {
+    &:before {
+        content: $icon_fountain;
+    }
+}
+
+.icon_instagram_social {
+    &:before {
+        content: $icon_instagram_social;
+    }
+}
+
+.icon_mouse {
+    &:before {
+        content: $icon_mouse;
+    }
+}
+
+.icon_phone-call {
+    &:before {
+        content: $icon_phone-call;
+    }
+}
+
+.icon_placeholder {
+    &:before {
+        content: $icon_placeholder;
+    }
+}
+
+.icon_play {
+    &:before {
+        content: $icon_play;
+    }
+}
+
+.icon_square {
+    &:before {
+        content: $icon_square;
+    }
+}
+
+.icon_vk_social {
+    &:before {
+        content: $icon_vk_social;
+    }
+}
+
+.icon_youtube_social {
+    &:before {
+        content: $icon_youtube_social;
+    }
+}

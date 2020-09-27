@@ -1,0 +1,296 @@
+
+//  ==========================
+//  Eremin Alexey
+//  Email: eremeow138@yandex.ru
+//  ==========================
+
+// Подключение примесей
+@import 'mixins/mixin';
+
+// Пример подключение шрифта через google fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
+// Пример подключение шрифта через mixin
+// 4 параметра: 1. Название шрифта; 2. Путь к шрифту; 3. Толщина шрифта(font-weight); 4. Стиль шрифта(font-style)
+// @include font-face("Pusia", "../fonts/Pusia-Bold", 400, normal); // Раскомментировать при использовании
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Bold", bold, normal);
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Black", 900, normal);
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Light", 300, normal);
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Thin", 100, normal);
+
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Medium", 500, normal); // Раскомментировать при использовании
+@include font-face("Roboto", "../fonts/Roboto/Roboto-Regular", normal, normal);
+
+@include font-face("Playfair Display", "../fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold", 800, normal);
+@include font-face("Playfair Display", "../fonts/PlayfairDisplay/PlayfairDisplay-Medium", 500, normal);
+@include font-face("Playfair Display", "../fonts/PlayfairDisplay/PlayfairDisplay-Regular", normal, normal);
+@include font-face("Playfair Display", "../fonts/PlayfairDisplay/PlayfairDisplay-Black", 900, normal);
+@include font-face("Playfair Display", "../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold", 600, normal);
+
+@include font-face("Post No Bills Jaffna", "../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Light", 300, normal);
+@include font-face("Post No Bills Jaffna", "../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Regular", normal, normal);
+@include font-face("Post No Bills Jaffna", "../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Bold", bold, normal);
+@include font-face("Post No Bills Jaffna", "../fonts/PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold", 800, normal);
+@include font-face("Post No Bills Jaffna", "../fonts/PostNoBillsJaffna/PostNoBillsJaffna-Medium", 500, normal);
+@include font-face("Post No Bills Jaffna", "../fonts/PostNoBillsJaffna/PostNoBillsJaffna-SemiBold", 600, normal);
+
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Black", 900, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Light", 300, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Medium", 500, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-ExtraLight", 200, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-ExtraBold", 800, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Bold", bold, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Thin", 100, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-Regular", normal, normal);
+@include font-face("Raleway", "../fonts/Raleway/Raleway-SemiBold", 600, normal);
+
+// Подключение отдельных фалов стилей в общий css
+// Файл с переменными
+@import 'variables/variables';
+// Файл со стилями сброса. Используется подправленный normalize.css
+@import 'core/reset';
+// Файл с основными стилями каркаса страницы
+@import 'core/template';
+// Иконки соц сетей
+@import 'core/soc';
+// Стили для шапки
+@import 'core/header';
+// Стили для навигации
+@import 'core/navbar';
+// Стили для подвала
+@import 'core/footer';
+
+@import 'fonts/icon_fonts';
+
+// * {
+//     border: 1px solid #000;
+// }
+body {
+    background-color: #242B33;
+}
+
+.container_center {
+    position: relative;
+}
+
+.home {
+    position: relative;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        margin-top: 54px;
+        // margin-left: 33px;
+        max-width: 582px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // flex-grow: 1;
+    }
+
+    &__title {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #D4C17F;
+        // text-indent: none;
+        // flex-grow: 1;
+        // letter-spacing: -0.05em;
+        // max-width: 581px;
+    }
+
+    &__downIcon {
+        color: #D4C17F;
+        font-size: 40px;
+        margin-top: 82px;
+    }
+
+    &__bottom {
+        // margin: 0 auto;
+        position: absolute;
+        bottom: 21px;
+        // left: 29%;
+        display: flex;
+        justify-content: space-between;
+        // max-width: 600px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-left: 16px;
+        }
+
+    }
+
+    &__icon {
+        font-size: 21px;
+        margin-right: 15px;
+    }
+
+    &__text {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        // line-height: 21px;
+    }
+
+}
+
+.advantages {
+    position: relative;
+    background-color: #242B33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+
+    &__content {
+        position: relative;
+        margin: 150px 0 62px;
+
+        max-width: 893px;
+        display: flex;
+        // justify-content: center;
+
+    }
+
+    &__item {
+        // border: 1px solid #D4C17F;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        font-size: 80px;
+        color: #D4C17F;
+    }
+
+    &__text {
+        // margin: 38px 27px 0;
+        margin-top: 38px;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        /* or 135% */
+        text-align: center;
+    }
+
+    &__II {
+        position: absolute;
+        right: -30%;
+        top: -79%;
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 400px;
+        opacity: 0.02;
+        text-align: center;
+
+    }
+
+}
+
+.apartments {
+    padding: 20px 0;
+
+    &__content {
+        position: relative;
+        margin: 93px 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    &__item {
+        cursor: pointer;
+        width: calc(50% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 36px;
+
+    }
+
+    &__plate {
+        display: flex;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 58%;
+        width: 100%;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            background-image: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+        }
+
+        &:hover::after {
+            content: '';
+            // opacity: 0;
+            height: 200%;
+        }
+    }
+
+    &__description {
+        position: absolute;
+        font-family: Raleway;
+        font-weight: normal;
+        font-size: 24px;
+        left: 48px;
+        bottom: 35px;
+        z-index: 2;
+    }
+
+    &__III {
+        position: absolute;
+        left: -19%;
+        top: -25%;
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 400px;
+        opacity: 0.02;
+        text-align: center;
+    }
+
+}
+
+.section {
+    &__title {
+        margin: 10px 0;
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 36px;
+        color: #D4C17F;
+    }
+
+}

@@ -1,0 +1,58 @@
+/* Набросок стилей для шапки
+ ----------------------------------------------------------------------------- */
+.header {
+	background-color: transparent;
+	padding: 30px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	// @extend %clear_a;
+	// Обертка логотипа
+	&__content {
+		max-width: $container_width;
+		padding: 0 15px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name {
+		font-family: Post No Bills Jaffna;
+
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 52px;
+	}
+
+	&__subname {
+		font-family: Raleway;
+
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		/* identical to box height */
+
+		letter-spacing: 0.12em;
+
+		text-transform: uppercase;
+
+	}
+
+	// // "Липкая" шапка
+	// &__stiky {
+	// 	// Позиционируем
+	// 	position: fixed;
+	// 	// Прибиваем вверх и влево
+	// 	top: 0;
+	// 	left: 0;
+	// 	// Растягиваем на всю ширину
+	// 	width: 100%;
+	// }
+}

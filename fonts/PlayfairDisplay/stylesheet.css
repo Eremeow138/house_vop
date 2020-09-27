@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-ExtraBold.eot');
+    src: url('PlayfairDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-ExtraBold.woff2') format('woff2'),
+        url('PlayfairDisplay-ExtraBold.woff') format('woff'),
+        url('PlayfairDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Medium.eot');
+    src: url('PlayfairDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Medium.woff2') format('woff2'),
+        url('PlayfairDisplay-Medium.woff') format('woff'),
+        url('PlayfairDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.eot');
+    src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff'),
+        url('PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Black.eot');
+    src: url('PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Black.woff2') format('woff2'),
+        url('PlayfairDisplay-Black.woff') format('woff'),
+        url('PlayfairDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Bold.eot');
+    src: url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('PlayfairDisplay-Bold.woff') format('woff'),
+        url('PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-SemiBold.eot');
+    src: url('PlayfairDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-SemiBold.woff2') format('woff2'),
+        url('PlayfairDisplay-SemiBold.woff') format('woff'),
+        url('PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

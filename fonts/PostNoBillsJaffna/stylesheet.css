@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('PostNoBillsJaffna-Light.eot');
+    src: url('PostNoBillsJaffna-Light.eot?#iefix') format('embedded-opentype'),
+        url('PostNoBillsJaffna-Light.woff2') format('woff2'),
+        url('PostNoBillsJaffna-Light.woff') format('woff'),
+        url('PostNoBillsJaffna-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('PostNoBillsJaffna-Regular.eot');
+    src: url('PostNoBillsJaffna-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PostNoBillsJaffna-Regular.woff2') format('woff2'),
+        url('PostNoBillsJaffna-Regular.woff') format('woff'),
+        url('PostNoBillsJaffna-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('PostNoBillsJaffna-Bold.eot');
+    src: url('PostNoBillsJaffna-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PostNoBillsJaffna-Bold.woff2') format('woff2'),
+        url('PostNoBillsJaffna-Bold.woff') format('woff'),
+        url('PostNoBillsJaffna-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('PostNoBillsJaffna-ExtraBold.eot');
+    src: url('PostNoBillsJaffna-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('PostNoBillsJaffna-ExtraBold.woff2') format('woff2'),
+        url('PostNoBillsJaffna-ExtraBold.woff') format('woff'),
+        url('PostNoBillsJaffna-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('PostNoBillsJaffna-Medium.eot');
+    src: url('PostNoBillsJaffna-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PostNoBillsJaffna-Medium.woff2') format('woff2'),
+        url('PostNoBillsJaffna-Medium.woff') format('woff'),
+        url('PostNoBillsJaffna-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('PostNoBillsJaffna-SemiBold.eot');
+    src: url('PostNoBillsJaffna-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('PostNoBillsJaffna-SemiBold.woff2') format('woff2'),
+        url('PostNoBillsJaffna-SemiBold.woff') format('woff'),
+        url('PostNoBillsJaffna-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
