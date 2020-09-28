@@ -1,12 +1,29 @@
 @charset "UTF-8";
+/* Global variables */
+/* ======================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
-.main__content:after, .footer:after {
-  content: "";
-  display: table;
-  clear: both;
+.txt_primary {
+  color: #7b8287;
+}
+.txt_success {
+  color: #36a566;
+}
+.txt_info {
+  color: #03a9f4;
+}
+.txt_warning {
+  color: #fca33e;
+}
+.txt_danger {
+  color: #ff1a1a;
 }
 
-.footer:before {
+/* Grid */
+/* ======================================================================== */
+/* Form */
+/* ======================================================================== */
+/* Breakpoints */
+.main__content:after {
   content: "";
   display: table;
   clear: both;
@@ -168,29 +185,6 @@
   font-weight: 600;
   src: url("../fonts/Raleway/Raleway-SemiBold.eot?") format("eot"), url("../fonts/Raleway/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"), url("../fonts/Raleway/Raleway-SemiBold.svg#Raleway") format("svg");
 }
-/* Global variables */
-/* ======================================================================== */
-.txt_primary {
-  color: #7b8287;
-}
-.txt_success {
-  color: #36a566;
-}
-.txt_info {
-  color: #03a9f4;
-}
-.txt_warning {
-  color: #fca33e;
-}
-.txt_danger {
-  color: #ff1a1a;
-}
-
-/* Grid */
-/* ======================================================================== */
-/* Form */
-/* ======================================================================== */
-/* Breakpoints */
 * {
   box-sizing: border-box;
 }
@@ -802,12 +796,72 @@ template {
  ----------------------------------------------------------------------------- */
 .footer {
   position: relative;
-  height: 100px;
-  background: #BFF08E;
+  background: #2D343C;
 }
 .footer .container_center {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 27px;
+}
+.footer__content {
+  margin-top: 51px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+}
+.footer__name {
+  font-family: Post No Bills Jaffna;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+.footer__subname {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.footer__column {
+  margin-top: 10px;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+.footer__item {
+  margin-bottom: 16px;
+}
+.footer__item a {
+  transition: 0.3s;
+}
+.footer__item a:hover {
+  color: #D4C17F;
+}
+.footer__item span {
+  color: #D4C17F;
+}
+.footer__social {
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+.footer__social a {
+  width: 25%;
+  transition: 0.3s;
+}
+.footer__social a:nth-child(1) {
+  font-size: 31px;
+}
+.footer__social a:nth-child(2) {
+  font-size: 31px;
+}
+.footer__social a:hover {
+  color: #D4C17F;
 }
 
 @font-face {
@@ -995,11 +1049,11 @@ body {
 }
 
 .apartments {
-  padding: 20px 0;
+  padding-top: 20px;
 }
 .apartments__content {
   position: relative;
-  margin: 93px 0;
+  margin-top: 93px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
@@ -1034,7 +1088,7 @@ body {
 }
 .apartments__plate:hover::after {
   content: "";
-  height: 200%;
+  opacity: 0;
 }
 .apartments__description {
   position: absolute;
@@ -1062,4 +1116,275 @@ body {
   font-weight: bold;
   font-size: 36px;
   color: #D4C17F;
+}
+
+.firstForm {
+  display: flex;
+  align-items: center;
+}
+.firstForm__content {
+  margin: 143px 0;
+  display: flex;
+}
+.firstForm__left {
+  max-width: 535px;
+  margin-right: 35px;
+}
+.firstForm__description {
+  margin-top: 44px;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+}
+.firstForm__right {
+  max-width: 540px;
+  display: flex;
+  align-items: center;
+}
+
+.form_grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 74px -15px 0;
+}
+.form_grid_margin_s {
+  margin: 43px -15px 0;
+}
+.form__row {
+  width: calc(50% - 30px);
+  margin: 0 15px 35px;
+  position: relative;
+}
+.form__row_text {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #E7E7E7;
+}
+.form__row_oneLine {
+  width: calc(25% - 30px);
+}
+.form__row input:not([type]),
+.form__row input[type=datetime],
+.form__row input[type=email],
+.form__row input[type=number],
+.form__row input[type=password],
+.form__row input[type=search],
+.form__row input[type=tel],
+.form__row input[type=text],
+.form__row input[type=url],
+.form__row textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 17px 28px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 14px;
+  font-family: Raleway;
+  transition: all 0.3s;
+  text-align: center;
+  color: #BEBEBE;
+}
+.form__row input:not([type]):hover,
+.form__row input[type=datetime]:hover,
+.form__row input[type=email]:hover,
+.form__row input[type=number]:hover,
+.form__row input[type=password]:hover,
+.form__row input[type=search]:hover,
+.form__row input[type=tel]:hover,
+.form__row input[type=text]:hover,
+.form__row input[type=url]:hover,
+.form__row textarea:hover {
+  background-color: #fff;
+  color: black;
+}
+.form__row input:not([type]):focus,
+.form__row input[type=datetime]:focus,
+.form__row input[type=email]:focus,
+.form__row input[type=number]:focus,
+.form__row input[type=password]:focus,
+.form__row input[type=search]:focus,
+.form__row input[type=tel]:focus,
+.form__row input[type=text]:focus,
+.form__row input[type=url]:focus,
+.form__row textarea:focus {
+  background-color: #fff;
+  color: black;
+}
+.form__row input:not([type]).invalid,
+.form__row input[type=datetime].invalid,
+.form__row input[type=email].invalid,
+.form__row input[type=number].invalid,
+.form__row input[type=password].invalid,
+.form__row input[type=search].invalid,
+.form__row input[type=tel].invalid,
+.form__row input[type=text].invalid,
+.form__row input[type=url].invalid,
+.form__row textarea.invalid {
+  background-color: #fff0f0;
+  border: 1px solid red;
+}
+.form__row input:not([type])::-webkit-input-placeholder,
+.form__row input[type=datetime]::-webkit-input-placeholder,
+.form__row input[type=email]::-webkit-input-placeholder,
+.form__row input[type=number]::-webkit-input-placeholder,
+.form__row input[type=password]::-webkit-input-placeholder,
+.form__row input[type=search]::-webkit-input-placeholder,
+.form__row input[type=tel]::-webkit-input-placeholder,
+.form__row input[type=text]::-webkit-input-placeholder,
+.form__row input[type=url]::-webkit-input-placeholder,
+.form__row textarea::-webkit-input-placeholder {
+  text-align: center;
+  color: #BEBEBE;
+  font-family: Raleway;
+  font-size: 14px;
+}
+.form__row input:not([type]):-moz-placeholder,
+.form__row input[type=datetime]:-moz-placeholder,
+.form__row input[type=email]:-moz-placeholder,
+.form__row input[type=number]:-moz-placeholder,
+.form__row input[type=password]:-moz-placeholder,
+.form__row input[type=search]:-moz-placeholder,
+.form__row input[type=tel]:-moz-placeholder,
+.form__row input[type=text]:-moz-placeholder,
+.form__row input[type=url]:-moz-placeholder,
+.form__row textarea:-moz-placeholder {
+  text-align: center;
+  color: #BEBEBE;
+  font-family: Raleway;
+  font-size: 14px;
+}
+.form__row input:not([type])::-moz-placeholder,
+.form__row input[type=datetime]::-moz-placeholder,
+.form__row input[type=email]::-moz-placeholder,
+.form__row input[type=number]::-moz-placeholder,
+.form__row input[type=password]::-moz-placeholder,
+.form__row input[type=search]::-moz-placeholder,
+.form__row input[type=tel]::-moz-placeholder,
+.form__row input[type=text]::-moz-placeholder,
+.form__row input[type=url]::-moz-placeholder,
+.form__row textarea::-moz-placeholder {
+  text-align: center;
+  color: #BEBEBE;
+  font-family: Raleway;
+  font-size: 14px;
+}
+.form__row input:not([type]):-ms-input-placeholder,
+.form__row input[type=datetime]:-ms-input-placeholder,
+.form__row input[type=email]:-ms-input-placeholder,
+.form__row input[type=number]:-ms-input-placeholder,
+.form__row input[type=password]:-ms-input-placeholder,
+.form__row input[type=search]:-ms-input-placeholder,
+.form__row input[type=tel]:-ms-input-placeholder,
+.form__row input[type=text]:-ms-input-placeholder,
+.form__row input[type=url]:-ms-input-placeholder,
+.form__row textarea:-ms-input-placeholder {
+  text-align: center;
+  color: #BEBEBE;
+  font-family: Raleway;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: #D4C17F;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px 0 17px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #c7af59;
+}
+.btn_form {
+  width: 100%;
+}
+
+.video {
+  position: relative;
+}
+.video .container_center {
+  position: relative;
+}
+.video__wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.video__wrapper__prev,
+.video__wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video__IV {
+  position: absolute;
+  right: -19%;
+  top: -10%;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 400px;
+  opacity: 0.02;
+  text-align: center;
+}
+.video__prev {
+  display: block;
+  padding-bottom: 56.2%;
+}
+.video__play {
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  cursor: pointer;
+  width: 50px;
+}
+@media (min-width: 768px) {
+  .video__play {
+    width: initial;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+}
+
+.map {
+  margin-top: 160px;
+  padding-top: 20px;
+  margin-bottom: 130px;
+  padding-bottom: 20px;
+}
+.map #yandexMap {
+  width: 100%;
+  height: 358px;
+  padding: 0;
+  margin: 0;
+}
+.map__content {
+  margin-top: 100px !important;
+}
+.map__V {
+  position: absolute;
+  left: -11%;
+  top: -7%;
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 400px;
+  opacity: 0.02;
+  text-align: center;
+}
+
+.secondForm {
+  padding: 20px 0;
+  margin-bottom: 124px;
 }

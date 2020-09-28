@@ -1,12 +1,96 @@
 /* Набросок стилей для подвала
  ----------------------------------------------------------------------------- */
+
 .footer {
 	position: relative;
-	height: $footer_height;
-	background: #BFF08E;
-	@extend %clear_all;
+	// height: $footer_height;
+	background: #2D343C;
+	// @extend %clear_all;
 	.container_center {
 		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-bottom: 27px;
 	}
+
+	&__content {
+		margin-top: 51px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name {
+		font-family: Post No Bills Jaffna;
+
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 52px;
+	}
+
+	&__subname {
+		font-family: Raleway;
+
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		/* identical to box height */
+
+		letter-spacing: 0.12em;
+
+		text-transform: uppercase;
+
+	}
+
+	&__column {
+		margin-top: 10px;
+		font-family: Raleway;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.05em;
+
+	}
+
+	&__item {
+		margin-bottom: 16px;
+	}
+
+	&__item a {
+		transition: 0.3s;
+
+		&:hover {
+			color: #D4C17F;
+		}
+	}
+
+	&__item span {
+		color: #D4C17F;
+	}
+
+	&__social {
+		font-size: 21px;
+		display: flex;
+		align-items: center;
+
+	}
+
+	&__social a {
+		width: 25%;
+		transition: 0.3s;
+
+		&:nth-child(1) {
+			font-size: 31px;
+		}
+
+		&:nth-child(2) {
+			font-size: 31px;
+		}
+
+		&:hover {
+			color: #D4C17F;
+		}
+	}
+
 }

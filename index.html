@@ -76,11 +76,105 @@
         </div>
       </section>
       <!-- end apartments-->
+      <!-- begin firstForm-->
+      <section class="firstForm section" id="firstForm" style="background-image: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(img/buildings.jpg);">
+        <div class="container_center">
+          <div class="firstForm__content">
+            <div class="firstForm__left">
+              <h2 class="section__title">Хотите посмотреть?</h2>
+              <div class="firstForm__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
+            </div>
+            <div class="firstForm__right">
+              <form class="form form_grid" id="" method="" action="">
+                <div class="form__row">
+                  <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
+                </div>
+                <div class="form__row">
+                  <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
+                </div>
+                <div class="form__row form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
+                <div class="form__row">
+                  <button class="btn btn_form" type="submit">Посмотреть район</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end firstForm-->
+      <!-- begin video-->
+      <section class="video section" id="video">
+        <div class="container_center">
+          <div class="video__IV">IV</div>
+          <div class="video__wrapper js_youtube" id="iwMqsKDTdQ0">
+            <div class="video__prev" style="background-image: url(img/loft3.jpg)"></div>
+          </div>
+        </div>
+      </section>
+      <!-- end video-->
+      <!-- begin map-->
+      <section class="map section" id="map">
+        <div class="container_center">
+          <h2 class="section__title">Район на карте</h2>
+          <div class="map__content" id="yandexMap">
+            <div class="map__V">V</div>
+          </div>
+        </div>
+      </section>
+      <!-- end map-->
+      <!-- begin secondForm-->
+      <section class="secondForm section" id="secondForm">
+        <div class="container_center">
+          <h2 class="section__title">Есть вопросы?</h2>
+          <div class="secondForm__content">
+            <form class="form form_grid form_grid_margin_s" id="" method="" action="">
+              <div class="form__row form__row_oneLine form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
+              <div class="form__row form__row_oneLine">
+                <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
+              </div>
+              <div class="form__row form__row_oneLine">
+                <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
+              </div>
+              <div class="form__row form__row_oneLine">
+                <button class="btn btn_form" type="submit">Посмотреть район</button>
+              </div>
+            </form>
+          </div>
+          <!-- end secondForm-->
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container_center">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
+        <div class="footer__content"><a class="footer__logo"><span class="footer__name">HouseVOP</span><span class="footer__subname">Жилой комплекс</span></a>
+          <div class="footer__column">
+            <div class="footer__item"> <a href="http://" target="_blank">О комплексе</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Район</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Каталог квартир</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Ипотека</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Контакты</a></div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__item"> <a href="http://" target="_blank">О комплексе</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Район</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Каталог квартир</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Ипотека</a></div>
+            <div class="footer__item"><a href="http://" target="_blank">Контакты</a></div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__item">Адрес: Наб. реки Фонтанки 10-15</div>
+            <div class="footer__item"> <a href="tel:8 (812) 123-45-67">Телефон: 8 (812) 123-45-67</a></div>
+            <div class="footer__item">Отдел продаж: 10:00 - 20:00</div>
+            <div class="footer__item"> <a href="mailto:vip@housevip.ru">E-mail: <span>vip@housevip.ru</span></a></div>
+            <div class="footer__item">
+              <div class="footer__social"><a href="http://youtube.com" target="_blank"> <i class="icon_youtube_social"></i></a><a href="http://vk.com" target="_blank"><i class="icon_vk_social"></i></a><a href="http://facebook.com" target="_blank"><i class="icon_facebook_social"> </i></a><a href="http://instagram.com" target="_blank"><i class="icon_instagram_social"></i></a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
 </html>
+<script src="js/jquery.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c7bb6b77-3736-4ed1-944b-c7364b333d9d" type="text/javascript"></script><script src="js/polygon.js" type="text/javascript"></script>
+<script src="js/script.js"></script>

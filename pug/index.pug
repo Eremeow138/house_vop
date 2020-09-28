@@ -70,3 +70,58 @@ block content
                         .apartments__description Лофт — 2 этажа
 
     // end apartments
+    // begin firstForm
+    section#firstForm.firstForm.section(style="background-image: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(img/buildings.jpg);")
+        .container_center
+            .firstForm__content
+                .firstForm__left
+                    h2.section__title Хотите посмотреть?
+                    .firstForm__description Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                .firstForm__right
+                    form.form.form_grid(id="", method="", action="")
+                        .form__row
+                            input(type="text", name="firstName", placeholder="Ваше имя", required)
+                        .form__row
+                            input(type="text", name="phone", placeholder="Ваш телефон", required)
+                        .form__row.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                        .form__row
+                            button.btn.btn_form(type="submit", ) Посмотреть район
+
+
+
+
+    // end firstForm
+    // begin video
+    section#video.video.section
+        .container_center
+            .video__IV IV
+            .video__wrapper.js_youtube#iwMqsKDTdQ0
+
+                .video__prev(style="background-image: url(img/loft3.jpg)")
+
+
+    // end video
+    // begin map
+    section#map.map.section
+        .container_center
+            h2.section__title Район на карте
+            #yandexMap.map__content
+                .map__V V
+
+    // end map
+    // begin secondForm
+    section#secondForm.secondForm.section
+        .container_center
+            h2.section__title Есть вопросы?
+            .secondForm__content
+                form.form.form_grid.form_grid_margin_s(id="", method="", action="")
+                    .form__row.form__row_oneLine.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                    .form__row.form__row_oneLine
+                        input(type="text", name="firstName", placeholder="Ваше имя", required)
+                    .form__row.form__row_oneLine
+                        input(type="text", name="phone", placeholder="Ваш телефон", required)
+
+                    .form__row.form__row_oneLine
+                        button.btn.btn_form(type="submit", ) Посмотреть район
+
+            // end secondForm
