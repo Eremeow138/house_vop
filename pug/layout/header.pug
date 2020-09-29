@@ -6,16 +6,25 @@ header.header
                 span.header__subname Жилой комплекс
 
         nav.header__right
+            input.hamburger#hamburger(type="checkbox")
+            label.hamburger(for="hamburger")
+                i
+                text
+                    close закрыть
+                    open меню
+            //- section.drawer-list
+            //-     ul
+            //-         li
+            //-             a(href="http://", target="_blank") link
+            //-         li
+            //-             a(href="http://", target="_blank") link
+            //-         li
+            //-             a(href="http://", target="_blank") link
+            //-         li
+            //-             a(href="http://", target="_blank") link
             ul.navbar
                 li.navbar__item
                     a.navbar__link(href="#") О комплексе
-                        span
-                        span
-                        span
-                        span
-
-                li.navbar__item
-                    a.navbar__link(href="#") Район
                         span
                         span
                         span
@@ -27,14 +36,29 @@ header.header
                         span
                         span
                 li.navbar__item
-                    a.navbar__link(href="#") Ипотека
+                    a.navbar__link(href="#") Район
                         span
                         span
                         span
                         span
+
                 li.navbar__item
                     a.navbar__link(href="#") Контакты
                         span
                         span
                         span
                         span
+            //- ниже оригинальное меню
+            //- ul.navbar
+            //-     li.navbar__item
+            //-         a.navbar__link(href="#") О комплексе
+            //- 
+            //-     li.navbar__item
+            //-         a.navbar__link(href="#") Каталог квартир
+            //- 
+            //-     li.navbar__item
+            //-         a.navbar__link(href="#") Район
+            //- 
+            //- 
+            //-     li.navbar__item
+            //-         a.navbar__link(href="#") Контакты

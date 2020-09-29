@@ -67,6 +67,7 @@
 // }
 body {
     background-color: #242B33;
+    // overflow-x: hidden;
 }
 
 .container_center {
@@ -99,11 +100,15 @@ body {
     }
 
     &__title {
+        @media (min-width: 768px) {
+            font-size: 48px;
+            line-height: 64px;
+        }
         font-family: Playfair Display;
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
-        line-height: 64px;
+        font-size: 32px;
+        line-height: 46px;
         text-align: center;
         color: #D4C17F;
         // text-indent: none;
@@ -113,6 +118,10 @@ body {
     }
 
     &__downIcon {
+        @media (min-width: 768px) {
+            display: block;
+        }
+        display: none;
         color: #D4C17F;
         font-size: 40px;
         margin-top: 82px;
@@ -129,28 +138,35 @@ body {
     }
 
     &__item {
+        @media (min-width: 768px) {
+            &:last-child {
+                margin-left: 16px;
+
+            }
+            margin-right: 80px;
+        }
         display: flex;
         align-items: center;
-        margin-right: 80px;
+        margin-right: 10px;
         cursor: pointer;
-
-        &:last-child {
-            margin-left: 16px;
-        }
 
     }
 
     &__icon {
-        font-size: 21px;
-        margin-right: 15px;
+        @media (min-width: 768px) {
+            font-size: 21px;
+            margin-right: 15px;
+        }
+        font-size: 16px;
+        margin-right: 8px;
     }
 
     &__text {
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
         font-family: Raleway;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        // line-height: 21px;
+        font-size: 12px;
     }
 
 }

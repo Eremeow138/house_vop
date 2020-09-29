@@ -658,7 +658,8 @@ template {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -100px auto;
+  margin: 0 auto -100px;
+  overflow-x: hidden;
 }
 
 .container_center {
@@ -736,33 +737,353 @@ template {
 
 /* Набросок стилей для навигации
 -------------------------------------------------------------------------------*/
+input.hamburger {
+  display: none;
+}
+input.hamburger:checked ~ .navbar {
+  transform: translatex(0);
+  border-bottom-left-radius: 0;
+}
+input.hamburger:checked ~ .navbar li {
+  transform: translatex(0);
+}
+input.hamburger:checked ~ .navbar li:nth-child(1) {
+  transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(2) {
+  transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(3) {
+  transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(4) {
+  transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(5) {
+  transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(6) {
+  transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(7) {
+  transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(8) {
+  transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(9) {
+  transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(10) {
+  transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(11) {
+  transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(12) {
+  transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(13) {
+  transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(14) {
+  transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(15) {
+  transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(16) {
+  transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(17) {
+  transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(18) {
+  transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(19) {
+  transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(20) {
+  transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(21) {
+  transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(22) {
+  transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(23) {
+  transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(24) {
+  transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(25) {
+  transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(26) {
+  transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(27) {
+  transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(28) {
+  transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(29) {
+  transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(30) {
+  transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(31) {
+  transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(32) {
+  transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(33) {
+  transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(34) {
+  transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(35) {
+  transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(36) {
+  transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(37) {
+  transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(38) {
+  transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(39) {
+  transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(40) {
+  transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(41) {
+  transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(42) {
+  transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(43) {
+  transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(44) {
+  transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(45) {
+  transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(46) {
+  transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(47) {
+  transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(48) {
+  transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(49) {
+  transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li:nth-child(50) {
+  transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .navbar li a {
+  padding-right: 15px;
+}
+input.hamburger:checked ~ label > i {
+  background-color: transparent;
+  transform: rotate(90deg);
+}
+input.hamburger:checked ~ label > i:before {
+  transform: translate(-50%, -50%) rotate(315deg);
+}
+input.hamburger:checked ~ label > i:after {
+  transform: translate(-50%, -50%) rotate(-315deg);
+}
+input.hamburger:checked ~ label close {
+  color: #FEFEFE;
+  width: 100%;
+}
+input.hamburger:checked ~ label open {
+  color: rgba(0, 0, 0, 0);
+  width: 0;
+}
+
+label.hamburger {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  z-index: 9999;
+  display: block;
+  height: 100px;
+  width: 70px;
+}
+@media (min-width: 768px) {
+  label.hamburger {
+    display: none;
+  }
+}
+label.hamburger:hover {
+  cursor: pointer;
+}
+label.hamburger text close,
+label.hamburger text open {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.12em;
+  align-text: center;
+  position: absolute;
+  top: 32px;
+  transform: translateY(50px);
+  text-align: center;
+  overflow: hidden;
+  transition: width 0.25s 0.35s, color 0.45s 0.35s;
+}
+label.hamburger text close {
+  color: rgba(0, 0, 0, 0);
+  right: 0;
+  width: 0;
+}
+label.hamburger text open {
+  color: #FEFEFE;
+  width: 100%;
+}
+label.hamburger > i {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: #FEFEFE;
+  pointer-events: auto;
+  transition-duration: 0.35s;
+  transition-delay: 0.35s;
+}
+label.hamburger > i:after, label.hamburger > i:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  background-color: #FEFEFE;
+  content: "";
+  transition: transform 0.35s;
+  transform-origin: 50% 50%;
+}
+label.hamburger > i:before {
+  transform: translate(-50%, -14px);
+}
+label.hamburger > i:after {
+  transform: translate(-50%, 14px);
+}
+
 .navbar {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(100vw, 0);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
+  border-bottom-left-radius: 100vw;
+}
+@media (min-width: 768px) {
+  .navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    position: initial;
+    height: initial;
+    width: initial;
+    border: none;
+    transform: none;
+    -ms-transform: none;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    background-color: #3f4144;
+    background-color: rgba(15, 18, 21, 0.8);
+  }
 }
 .navbar__item {
-  margin: 0 0 0 15px;
+  list-style: none;
+  text-transform: uppercase;
+  pointer-events: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transform: translatex(100vw);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
 }
 .navbar__item:last-child {
-  margin: 0 -10px 0 28px;
+  margin-bottom: 2em;
+}
+@media (min-width: 768px) {
+  .navbar__item {
+    transform: translatex(0);
+    -ms-transform: translatex(0);
+    text-transform: none;
+    margin: 0 0 0 15px;
+  }
+  .navbar__item:last-child {
+    margin: 0 -10px 0 15px;
+  }
 }
 .navbar__link {
-  padding: 10px;
-  font-family: Raleway;
-  font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  position: relative;
-  transition: 0.5s;
+  text-decoration: none;
+  color: #FEFEFE;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  font-size: calc(24px - .5vw);
+}
+@media (min-width: 768px) {
+  .navbar__link {
+    padding: 10px;
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    position: relative;
+    transition: 0.5s;
+  }
 }
 .navbar__link:hover {
-  color: #242B33;
+  color: #D4C17F;
+  cursor: pointer;
 }
-.navbar__link:hover span {
-  transform-origin: bottom;
-  transform: scaleY(1);
+@media (min-width: 768px) {
+  .navbar__link:hover {
+    color: #242B33;
+  }
+}
+@media (max-width: 767px) {
+  .navbar__link:hover {
+    background-color: #929599;
+    background-color: rgba(36, 43, 51, 0.5);
+  }
+}
+@media (min-width: 768px) {
+  .navbar__link:hover:hover span {
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
 }
 .navbar__link span {
   position: absolute;
@@ -792,9 +1113,11 @@ template {
   left: 75%;
   transition-delay: 0.45s;
 }
+
 /* Набросок стилей для подвала
  ----------------------------------------------------------------------------- */
 .footer {
+  overflow-x: hidden;
   position: relative;
   background: #2D343C;
 }
@@ -966,15 +1289,27 @@ body {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 32px;
+  line-height: 46px;
   text-align: center;
   color: #D4C17F;
 }
+@media (min-width: 768px) {
+  .home__title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
 .home__downIcon {
+  display: none;
   color: #D4C17F;
   font-size: 40px;
   margin-top: 82px;
+}
+@media (min-width: 768px) {
+  .home__downIcon {
+    display: block;
+  }
 }
 .home__bottom {
   position: absolute;
@@ -985,21 +1320,35 @@ body {
 .home__item {
   display: flex;
   align-items: center;
-  margin-right: 80px;
+  margin-right: 10px;
   cursor: pointer;
 }
-.home__item:last-child {
-  margin-left: 16px;
+@media (min-width: 768px) {
+  .home__item {
+    margin-right: 80px;
+  }
+  .home__item:last-child {
+    margin-left: 16px;
+  }
 }
 .home__icon {
-  font-size: 21px;
-  margin-right: 15px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+@media (min-width: 768px) {
+  .home__icon {
+    font-size: 21px;
+    margin-right: 15px;
+  }
 }
 .home__text {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .home__text {
+    font-size: 18px;
+  }
 }
 
 .advantages {

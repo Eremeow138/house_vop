@@ -8,142 +8,150 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__left"><a class="header__logo" href="/"><span class="header__name">HouseVOP</span><span class="header__subname">Жилой комплекс</span></a></div>
-        <nav class="header__right">
-          <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="#">О комплексе<span></span><span></span><span></span><span></span></a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Район<span></span><span></span><span></span><span></span></a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Каталог квартир<span></span><span></span><span></span><span></span></a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Ипотека<span></span><span></span><span></span><span></span></a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Контакты<span></span><span></span><span></span><span></span></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main_content">
-      <!-- begin home-->
-      <section class="home section" id="home">
-        <div class="home__content">
-          <h1 class="home__title">
-             Жилой комплекс<br/>в историческом центре</h1>
-          <div class="home__downIcon"><i class="icon_mouse"></i></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__content">
+          <div class="header__left"><a class="header__logo" href="/"><span class="header__name">HouseVOP</span><span class="header__subname">Жилой комплекс</span></a></div>
+          <nav class="header__right">
+            <input class="hamburger" id="hamburger" type="checkbox"/>
+            <label class="hamburger" for="hamburger"><i></i>
+              <text>
+                <close>закрыть</close>
+                <open>меню</open>
+              </text>
+            </label>
+            <ul class="navbar">
+              <li class="navbar__item"><a class="navbar__link" href="#">О комплексе<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Каталог квартир<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Район<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Контакты<span></span><span></span><span></span><span></span></a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="home__bottom"><a class="home__item"><span class="home__icon"><i class="icon_placeholder"></i></span><span class="home__text">Наб. реки Фонтанки 10-15</span></a><a class="home__item"><span class="home__icon"><i class="icon_phone-call"></i></span><span class="home__text">8 (812) 123-45-67</span></a></div>
-      </section>
-      <!-- end home-->
-      <!-- begin advantages-->
-      <section class="advantages section" id="advantages">
-        <div class="container_center">
-          <div class="advantages__content">
-            <div class="advantages__II">II</div>
-            <div class="advantages__item">
-              <div class="advantages__icon"><i class="icon_square"> </i></div>
-              <div class="advantages__text">Рядом исторические парки и скверы</div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__icon"><i class="icon_building"> </i></div>
-              <div class="advantages__text">Полностью обустроенный</div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__icon"><i class="icon_fountain"></i></div>
-              <div class="advantages__text">10 фонтанов на территории</div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantages__icon"><i class="icon_bicycle"></i></div>
-              <div class="advantages__text">6 км<br/>велодорожек</div>
+      </header>
+      <main class="main_content">
+        <!-- begin home-->
+        <section class="home section" id="home">
+          <div class="home__content">
+            <h1 class="home__title">
+               Жилой комплекс<br/>в историческом центре</h1>
+            <div class="home__downIcon"><i class="icon_mouse"></i></div>
+          </div>
+          <div class="home__bottom"><a class="home__item"><span class="home__icon"><i class="icon_placeholder"></i></span><span class="home__text">Наб. реки Фонтанки 10-15</span></a><a class="home__item"><span class="home__icon"><i class="icon_phone-call"></i></span><span class="home__text">8 (812) 123-45-67</span></a></div>
+        </section>
+        <!-- end home-->
+        <!-- begin advantages-->
+        <section class="advantages section" id="advantages">
+          <div class="container_center">
+            <div class="advantages__content">
+              <div class="advantages__II">II</div>
+              <div class="advantages__item">
+                <div class="advantages__icon"><i class="icon_square"> </i></div>
+                <div class="advantages__text">Рядом исторические парки и скверы</div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__icon"><i class="icon_building"> </i></div>
+                <div class="advantages__text">Полностью обустроенный</div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__icon"><i class="icon_fountain"></i></div>
+                <div class="advantages__text">10 фонтанов на территории</div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__icon"><i class="icon_bicycle"></i></div>
+                <div class="advantages__text">6 км<br/>велодорожек</div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- end advantages-->
-      <!-- begin apartments-->
-      <section class="apartments section" id="apartments">
-        <div class="container_center">
-          <h2 class="section__title">Наши квартиры</h2>
-          <div class="apartments__content">
-            <div class="apartments__III">III</div>
-            <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft.jpg)">
-                <div class="apartments__description">Лофт — 3 этажа</div></a></div>
-            <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft2.jpg)">
-                <div class="apartments__description">Лофт — 2 этажа</div></a></div>
-            <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft.jpg)">
-                <div class="apartments__description">Лофт — 3 этажа</div></a></div>
-            <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft2.jpg)">
-                <div class="apartments__description">Лофт — 2 этажа</div></a></div>
-          </div>
-        </div>
-      </section>
-      <!-- end apartments-->
-      <!-- begin firstForm-->
-      <section class="firstForm section" id="firstForm" style="background-image: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(img/buildings.jpg);">
-        <div class="container_center">
-          <div class="firstForm__content">
-            <div class="firstForm__left">
-              <h2 class="section__title">Хотите посмотреть?</h2>
-              <div class="firstForm__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
+        </section>
+        <!-- end advantages-->
+        <!-- begin apartments-->
+        <section class="apartments section" id="apartments">
+          <div class="container_center">
+            <h2 class="section__title">Наши квартиры</h2>
+            <div class="apartments__content">
+              <div class="apartments__III">III</div>
+              <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft.jpg)">
+                  <div class="apartments__description">Лофт — 3 этажа</div></a></div>
+              <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft2.jpg)">
+                  <div class="apartments__description">Лофт — 2 этажа</div></a></div>
+              <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft.jpg)">
+                  <div class="apartments__description">Лофт — 3 этажа</div></a></div>
+              <div class="apartments__item"><a class="apartments__plate" href="vk.com" style="background-image: url(img/loft2.jpg)">
+                  <div class="apartments__description">Лофт — 2 этажа</div></a></div>
             </div>
-            <div class="firstForm__right">
-              <form class="form form_grid" id="" method="" action="">
-                <div class="form__row">
+          </div>
+        </section>
+        <!-- end apartments-->
+        <!-- begin firstForm-->
+        <section class="firstForm section" id="firstForm" style="background-image: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(img/buildings.jpg);">
+          <div class="container_center">
+            <div class="firstForm__content">
+              <div class="firstForm__left">
+                <h2 class="section__title">Хотите посмотреть?</h2>
+                <div class="firstForm__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
+              </div>
+              <div class="firstForm__right">
+                <form class="form form_grid" id="" method="" action="">
+                  <div class="form__row">
+                    <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
+                  </div>
+                  <div class="form__row">
+                    <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
+                  </div>
+                  <div class="form__row form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
+                  <div class="form__row">
+                    <button class="btn btn_form" type="submit">Посмотреть район</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end firstForm-->
+        <!-- begin video-->
+        <section class="video section" id="video">
+          <div class="container_center">
+            <div class="video__IV">IV</div>
+            <div class="video__wrapper js_youtube" id="iwMqsKDTdQ0">
+              <div class="video__prev" style="background-image: url(img/loft3.jpg)"></div>
+            </div>
+          </div>
+        </section>
+        <!-- end video-->
+        <!-- begin map-->
+        <section class="map section" id="map">
+          <div class="container_center">
+            <h2 class="section__title">Район на карте</h2>
+            <div class="map__content" id="yandexMap">
+              <div class="map__V">V</div>
+            </div>
+          </div>
+        </section>
+        <!-- end map-->
+        <!-- begin secondForm-->
+        <section class="secondForm section" id="secondForm">
+          <div class="container_center">
+            <h2 class="section__title">Есть вопросы?</h2>
+            <div class="secondForm__content">
+              <form class="form form_grid form_grid_margin_s" id="" method="" action="">
+                <div class="form__row form__row_oneLine form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
+                <div class="form__row form__row_oneLine">
                   <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
                 </div>
-                <div class="form__row">
+                <div class="form__row form__row_oneLine">
                   <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
                 </div>
-                <div class="form__row form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
-                <div class="form__row">
+                <div class="form__row form__row_oneLine">
                   <button class="btn btn_form" type="submit">Посмотреть район</button>
                 </div>
               </form>
             </div>
+            <!-- end secondForm-->
           </div>
-        </div>
-      </section>
-      <!-- end firstForm-->
-      <!-- begin video-->
-      <section class="video section" id="video">
-        <div class="container_center">
-          <div class="video__IV">IV</div>
-          <div class="video__wrapper js_youtube" id="iwMqsKDTdQ0">
-            <div class="video__prev" style="background-image: url(img/loft3.jpg)"></div>
-          </div>
-        </div>
-      </section>
-      <!-- end video-->
-      <!-- begin map-->
-      <section class="map section" id="map">
-        <div class="container_center">
-          <h2 class="section__title">Район на карте</h2>
-          <div class="map__content" id="yandexMap">
-            <div class="map__V">V</div>
-          </div>
-        </div>
-      </section>
-      <!-- end map-->
-      <!-- begin secondForm-->
-      <section class="secondForm section" id="secondForm">
-        <div class="container_center">
-          <h2 class="section__title">Есть вопросы?</h2>
-          <div class="secondForm__content">
-            <form class="form form_grid form_grid_margin_s" id="" method="" action="">
-              <div class="form__row form__row_oneLine form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
-              <div class="form__row form__row_oneLine">
-                <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
-              </div>
-              <div class="form__row form__row_oneLine">
-                <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
-              </div>
-              <div class="form__row form__row_oneLine">
-                <button class="btn btn_form" type="submit">Посмотреть район</button>
-              </div>
-            </form>
-          </div>
-          <!-- end secondForm-->
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
     <footer class="footer">
       <div class="container_center">
         <div class="footer__content"><a class="footer__logo"><span class="footer__name">HouseVOP</span><span class="footer__subname">Жилой комплекс</span></a>

@@ -3,11 +3,12 @@
 // Использую в любой верстке
 .wrapper {
 	font-size: $main_font_size;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    // Переменная $footer_height задется в файле с переменными, если поставить в auto подвал будет находиться под блоком .wrapper
-    margin: 0 auto (-$footer_height) auto; // отрицательный нижний отступ на высоту футера
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	// Переменная $footer_height задется в файле с переменными, если поставить в auto подвал будет находиться под блоком .wrapper
+	margin: 0 auto (-$footer_height); // отрицательный нижний отступ на высоту футера
+	overflow-x: hidden;
 }
 
 // Стили для блока вывешенного по центру

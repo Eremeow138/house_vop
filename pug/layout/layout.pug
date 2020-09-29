@@ -13,10 +13,11 @@ html(lang="ru")
 
         link(rel="stylesheet", type="text/css", href="css/style.css")
     body
-        include header.pug
+        .wrapper
+            include header.pug
 
-        main.main_content
-            block content
+            main.main_content
+                block content
 
         include footer.pug
 
