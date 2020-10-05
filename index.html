@@ -8,6 +8,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
+    <div class="loader">
+      <div class="loader__wrapper">
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__bar"></div>
+        <div class="loader__ball"></div>
+      </div>
+    </div>
     <div class="wrapper">
       <header class="header">
         <div class="header__content">
@@ -21,10 +31,10 @@
               </text>
             </label>
             <ul class="navbar">
-              <li class="navbar__item"><a class="navbar__link" href="#">О комплексе<span></span><span></span><span></span><span></span></a></li>
-              <li class="navbar__item"><a class="navbar__link" href="#">Каталог квартир<span></span><span></span><span></span><span></span></a></li>
-              <li class="navbar__item"><a class="navbar__link" href="#">Район<span></span><span></span><span></span><span></span></a></li>
-              <li class="navbar__item"><a class="navbar__link" href="#">Контакты<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#advantages">О комплексе<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#apartments">Каталог квартир<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#firstForm">Район<span></span><span></span><span></span><span></span></a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#footer">Контакты<span></span><span></span><span></span><span></span></a></li>
             </ul>
           </nav>
         </div>
@@ -92,17 +102,17 @@
                 <div class="firstForm__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
               </div>
               <div class="firstForm__right">
-                <form class="form form_grid" id="" method="" action="">
+                <form class="form form_grid" id="form1" method="POST" enctype="multipart/form-data" onsubmit="send(event, 'send.php')">
                   <div class="form__row">
                     <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
                   </div>
                   <div class="form__row">
                     <input type="text" name="phone" placeholder="Ваш телефон" required="required"/>
                   </div>
-                  <div class="form__row form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
                   <div class="form__row">
                     <button class="btn btn_form" type="submit">Посмотреть район</button>
                   </div>
+                  <div class="form__row form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
                 </form>
               </div>
             </div>
@@ -134,8 +144,7 @@
           <div class="container_center">
             <h2 class="section__title">Есть вопросы?</h2>
             <div class="secondForm__content">
-              <form class="form form_grid form_grid_margin_s" id="" method="" action="">
-                <div class="form__row form__row_oneLine form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
+              <form class="form form_grid form_grid_margin_s" id="form2" method="POST" enctype="multipart/form-data" onsubmit="send(event, 'send.php')">
                 <div class="form__row form__row_oneLine">
                   <input type="text" name="firstName" placeholder="Ваше имя" required="required"/>
                 </div>
@@ -145,14 +154,24 @@
                 <div class="form__row form__row_oneLine">
                   <button class="btn btn_form" type="submit">Посмотреть район</button>
                 </div>
+                <div class="form__row form__row_oneLine form__row_text">*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.</div>
               </form>
             </div>
             <!-- end secondForm-->
           </div>
         </section>
+        <!-- Begin Modal info-->
+        <div class="modal fade info" id="info">
+          <div class="modal-dialog modal-dialog-sm">
+            <div class="modal-content"><a class="modal-close" href="#"></a>
+              <div class="info__message"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal info-->
       </main>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container_center">
         <div class="footer__content"><a class="footer__logo"><span class="footer__name">HouseVOP</span><span class="footer__subname">Жилой комплекс</span></a>
           <div class="footer__column">
@@ -184,5 +203,6 @@
   </body>
 </html>
 <script src="js/jquery.js"></script>
+<script src="js/modal.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c7bb6b77-3736-4ed1-944b-c7364b333d9d" type="text/javascript"></script><script src="js/polygon.js" type="text/javascript"></script>
 <script src="js/script.js"></script>

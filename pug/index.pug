@@ -78,14 +78,15 @@ block content
                     h2.section__title Хотите посмотреть?
                     .firstForm__description Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
                 .firstForm__right
-                    form.form.form_grid(id="", method="", action="")
+                    form.form.form_grid#form1(method="POST" enctype="multipart/form-data" onsubmit="send(event, 'send.php')")
                         .form__row
                             input(type="text", name="firstName", placeholder="Ваше имя", required)
                         .form__row
                             input(type="text", name="phone", placeholder="Ваш телефон", required)
-                        .form__row.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                         .form__row
                             button.btn.btn_form(type="submit", ) Посмотреть район
+                        .form__row.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+
 
 
 
@@ -114,8 +115,8 @@ block content
         .container_center
             h2.section__title Есть вопросы?
             .secondForm__content
-                form.form.form_grid.form_grid_margin_s(id="", method="", action="")
-                    .form__row.form__row_oneLine.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                form.form.form_grid.form_grid_margin_s#form2(method="POST" enctype="multipart/form-data" onsubmit="send(event, 'send.php')")
+                    //- .form__row.form__row_oneLine.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                     .form__row.form__row_oneLine
                         input(type="text", name="firstName", placeholder="Ваше имя", required)
                     .form__row.form__row_oneLine
@@ -123,5 +124,14 @@ block content
 
                     .form__row.form__row_oneLine
                         button.btn.btn_form(type="submit", ) Посмотреть район
-
+                    .form__row.form__row_oneLine.form__row_text *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
             // end secondForm
+
+    // Begin Modal info
+    .modal.fade.info#info
+        .modal-dialog.modal-dialog-sm
+            .modal-content
+                a(href="#" class="modal-close")
+
+                .info__message
+    // End Modal info

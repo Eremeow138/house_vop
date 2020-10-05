@@ -13,13 +13,21 @@
 	}
 
 	&__content {
-		margin-top: 51px;
+		@media (min-width: 768px) {
+			justify-content: space-between;
+			margin-top: 51px;
+		}
+		margin-top: 27px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+
 	}
 
 	&__logo {
-		display: flex;
+		@media (min-width: 768px) {
+			display: flex;
+		}
+		display: none;
 		flex-direction: column;
 	}
 
@@ -46,6 +54,22 @@
 	}
 
 	&__column {
+		&:nth-child(2) {
+			display: none;
+		}
+
+		&:nth-child(3) {
+			display: none;
+		}
+		@media (min-width: 768px) {
+			&:nth-child(2) {
+				display: block;
+			}
+
+			&:nth-child(3) {
+				display: block;
+			}
+		}
 		margin-top: 10px;
 		font-family: Raleway;
 		font-size: 14px;
