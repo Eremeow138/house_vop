@@ -1,5 +1,5 @@
 window.onload = function () {
-    hideLoader($('body'), false, 1000);
+    hideLoader($('body'), false, 1);
 };
 
 $(function () {
@@ -128,7 +128,7 @@ showLoader($(idForm), true);
         req.onload = function() {
         	if (req.status >= 200 && req.status < 400) {
         	json = JSON.parse(this.response); // Ебанный internet explorer 11
-            	// console.log(json);
+            	console.log(json);
 
             	// ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
             	if (json.result == "success") {
@@ -144,7 +144,7 @@ showLoader($(idForm), true);
                     // Пример с открытием окна
                     hideLoader($(idForm),true);
                     modal.modal('show');
-                    message.html('Ошибка. Сообщение не отправлено');
+                    message.html('Ошибка. Сообщение не отправлено '+req.status);
             	}
             // Если не удалось связаться с php файлом
             // } else {alert("Ошибка сервера. Номер: "+req.status);}};

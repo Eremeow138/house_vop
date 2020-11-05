@@ -39,7 +39,7 @@ input.hamburger {
 		}
 
 		& ~ label {
-			> i {
+			> .i {
 				background-color: transparent;
 				transform: rotate(90deg);
 
@@ -52,12 +52,12 @@ input.hamburger {
 				}
 			}
 
-			close {
+			.close {
 				color: $text;
 				width: 100%;
 			}
 
-			open {
+			.open {
 				color: rgba(0, 0, 0, 0);
 				width: 0;
 			}
@@ -70,46 +70,50 @@ label.hamburger {
 		display: none;
 	}
 	position: fixed;
-	top: 5px;
+	top: -8px;
 	right: 20px;
 	z-index: 9999;
 	// position: relative;
 	display: block;
-	height: 100px;
+	height: 70px;
 	width: 70px;
 
 	&:hover {
 		cursor: pointer;
 	}
 
-	text {
-		close,
-		open {
+	i {
+		font-style: normal;
+	}
+
+	.text {
+		.close,
+		.open {
 			text-transform: uppercase;
-			font-size: 0.8em;
+			font-size: 12px;
 			letter-spacing: 0.12em;
 			align-text: center;
 			position: absolute;
-			top: 32px;
+			top: 15px;
 			transform: translateY(50px);
 			text-align: center;
 			overflow: hidden;
 			transition: width 0.25s 0.35s, color 0.45s 0.35s;
 		}
 
-		close {
+		.close {
 			color: rgba(0, 0, 0, 0);
 			right: 0;
 			width: 0;
 		}
 
-		open {
+		.open {
 			color: $text;
 			width: 100%;
 		}
 	}
 
-	> i {
+	> .i {
 		position: absolute;
 		width: 100%;
 		height: 2px;
