@@ -11,12 +11,9 @@ $(function () {
             // Зная идентификатор видео на YouTube, легко можно найти его миниатюру и вывести фоном
             // $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
             // $(this).css('background-image', 'img/prev_video.jpg');
-
             // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
             $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
-
         });
-
         // При клике на картинку-превьюшку или кнопку play
         $('.video__play, .video__prev').on('click', function () {
         	// Получаем ID youtube видео
@@ -25,20 +22,16 @@ $(function () {
             var iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
             // Можно завести data-атрибуты для доп параметров. не обязательно.
             if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
-
             // Высота и ширина iframe должны быть такими же, как и у родительского блока
             var iframe = $('<iframe/>', {
                 'frameborder': '0',
                 'src': iframe_url,
                 'allow': 'autoplay',
             });
-
             // Выводим HTML5 плеер с YouTube поверх превьюшек
             $(this).closest('.video__wrapper').append(iframe);
-
         });
     }
-
 });
 // ytp-large-play-button ytp-button
 // Scroll to ID // Плавный скролл к элементу при нажатии на ссылку. В ссылке указываем ID элемента
@@ -46,33 +39,25 @@ $('a[href^="#"]').click( function(e){
     e.preventDefault();
     var scroll_el = $(this).attr('href');
     if (scroll_el == "#") {
+        
         return false;
     }
-
 	if ($(scroll_el).length != 0) {
-
-
         $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
-
 	}
     $(this).blur();
 	return false;
 });
-
 function hideMenu() {
-
     $('.navbar__link').on('click', function() {
-
             $('#hamburger').prop('checked', false);
     });
-
-
 }
 hideMenu();
-
 $('input').on('keyup', function() {
     checkFiels($(this));
 });
+
 
 //здесь мы прверяем форму и если какое то поле не заполенно - отменяем submit
 $('[type=submit]').on('click', function(e) {
@@ -81,10 +66,10 @@ $('[type=submit]').on('click', function(e) {
     // e.preventDefault();
     // let fields = $('#form').find('[required]'),
     let form = $(this).closest('form');
+
     let fields = form.find('[required]'),
     // // Создаем переменную для счетчика пустых полей
     empty = 0;
-
     fields.each(function(index, el) {
         // Проверяем пустое ли поле
         if ($(this).val() === '') {
@@ -105,10 +90,8 @@ function send(event, php){
     //тут мы получаем id элемента по вызванному событию, а потом кормим Jquery, чтобы получить нужный элемент
 let idForm = '#'+event.target.id;
 console.log(idForm);
-
 // console.log($(cName));
 showLoader($(idForm), true);
-
         // подготавливаем модальное окно с сообщением
         let modal = $('#info'),
             message = modal.find('.info__message');
@@ -129,7 +112,6 @@ showLoader($(idForm), true);
         	if (req.status >= 200 && req.status < 400) {
         	json = JSON.parse(this.response); // Ебанный internet explorer 11
             	console.log(json);
-
             	// ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
             	if (json.result == "success") {
             		// Если сообщение отправлено
@@ -150,7 +132,6 @@ showLoader($(idForm), true);
             // } else {alert("Ошибка сервера. Номер: "+req.status);}};
             } else {
                 hideLoader($(idForm),true);
-
                  modal.modal('show'); message.html('Ошибка сервера. Номер: '+req.status);}};
 
         // Если не удалось отправить запрос. Стоит блок на хостинге
@@ -166,7 +147,6 @@ showLoader($(idForm), true);
     // }
 
 }
-
 function modalClose(){
     $('.modal-close').on('click', function() {
         $(this).closest('.modal').modal('hide');
@@ -210,9 +190,6 @@ function showLoader(el, target, background) {
     </div>
 </div>`);
 }
-
-
-
 // Скрыть лоадер при загрузке товаров
 function hideLoader(el, del = false, time = 10 ) {
     if (del) {

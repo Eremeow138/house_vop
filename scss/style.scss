@@ -11,7 +11,7 @@
 @import 'mixins/mixin';
 
 // Пример подключение шрифта через google fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
 // Пример подключение шрифта через mixin
 // 4 параметра: 1. Название шрифта; 2. Путь к шрифту; 3. Толщина шрифта(font-weight); 4. Стиль шрифта(font-style)
 // @include font-face("Pusia", "../fonts/Pusia-Bold", 400, normal); // Раскомментировать при использовании
@@ -52,7 +52,7 @@
 // Файл с основными стилями каркаса страницы
 @import 'core/template';
 // Иконки соц сетей
-@import 'core/soc';
+// @import 'core/soc';
 // Стили для шапки
 @import 'core/header';
 // Стили для навигации
@@ -65,9 +65,7 @@
 @import 'vendor/modal';
 
 @import 'core/loader';
-// * {
-//     border: 1px solid #000;
-// }
+
 body {
     background-color: #242B33;
     // overflow-x: hidden;
@@ -78,8 +76,14 @@ body {
 }
 
 .home {
+    @media (min-width: 425px) {
+        background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     position: relative;
-    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama_small.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

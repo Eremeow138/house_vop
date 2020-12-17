@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Global variables */
 /* ======================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
 .txt_primary {
   color: #7b8287;
 }
@@ -680,30 +679,6 @@ template {
   padding-bottom: 100px;
 }
 
-.soc {
-  float: left;
-}
-.soc a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #000;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: all 0.3ss;
-  -o-transition: all 0.3ss;
-  transition: all 0.3ss;
-}
-.soc a:hover {
-  opacity: 0.8;
-}
-.soc a:before {
-  content: "soc";
-  color: #fff;
-  text-decoration: none;
-}
-
 /* Набросок стилей для шапки
  ----------------------------------------------------------------------------- */
 .header {
@@ -1188,7 +1163,6 @@ label.hamburger .text .open {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.12em;
-  align-text: center;
   position: absolute;
   top: 15px;
   -webkit-transform: translateY(50px);
@@ -2212,9 +2186,9 @@ body {
 
 .home {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url("../img/panorama.jpg");
-  background: -o-linear-gradient(top, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url("../img/panorama_small.jpg");
+  background: -o-linear-gradient(top, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama_small.jpg");
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama_small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2236,6 +2210,16 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 425px) {
+  .home {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242B33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242B33)), url("../img/panorama.jpg");
+    background: -o-linear-gradient(top, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/panorama.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .home__content {
   margin-top: 0;
