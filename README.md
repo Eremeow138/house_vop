@@ -7,4 +7,4 @@
 
 Простите за ужасные коммиты, я раньше не умел их правильно называть.
 
-<a href="https://eremeow.ru/projects/house_vop/index.html">Ссылка на сайт</a>
+<a href="https://eremeow138.github.io/house_vop/">Ссылка на сайт</a>
